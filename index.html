@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App - by Rohit</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/0d7847dc3f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="header">
+            <div class="left">
+                <div class="img">
+                    <img src="https://media-exp1.licdn.com/dms/image/C4D03AQFEUZW_J5HRdQ/profile-displayphoto-shrink_800_800/0/1663261452119?e=1675900800&v=beta&t=4IDLesrbew__ElQ3Q8G8Aomf4Wb7Foy9SboHZZu-DwQ"
+                        alt="rohit img">
+                </div>
+                <div class="header-text">
+                    <h1>Weather info</h1>
+                    <p>by <a href="https://www.linkedin.com/in/r9hit/">Rohit Choudhary</a> </p>
+                </div>
+
+            </div>
+
+            <div class="menu-bar">
+                <a href="#"> <i class="fa-solid fa-bars"></i> </a>
+            </div>
+        </div>
+
+
+        <div class="input">
+
+            <div class="pincode">
+
+                <form class="input-pincode">
+                    <input id="input-pincode" type="number" placeholder="Enter Pin-code">
+                    <button type="submit">Search</button>
+                </form>
+
+            </div>
+
+            <div class="location">
+
+                <form class="input-location">
+                    <input id="input-location" type="text" placeholder="Enter city name">
+                    <button type="submit">Search</button>
+                </form>
+
+            </div>
+
+        </div>
+
+        <div class="info-box">
+            <div class="weather-info">
+                <p>Search by Pin-code/zip-code Or Location</p>
+                <p>You can Enter any location But for pincode only indian pincode is valid</p>
+            </div>
+        </div>
+
+        <div id="fetchedData" class="fetched-data">
+
+            <div class="nav-bar">
+                <div class="up">
+                    <p><a href="#"></a> <span class="current">Current </span></a> <a href=""> <span class="pollution"> Pollution</span></a> </p>
+                </div>
+            </div>
+
+            <div class="main">
+
+                <div class="alert">
+                    Error: Some Error Occured! Check your input.
+                </div>
+
+                <div class="main-container">
+
+                    <div class="weather-detail-container">
+
+                        <div class="loading">
+                            <div class="dot-wave">
+                                <div class="dot-wave__dot"></div>
+                                <div class="dot-wave__dot"></div>
+                                <div class="dot-wave__dot"></div>
+                                <div class="dot-wave__dot"></div>
+                            </div>
+                        </div>
+
+                        <div class="data">
+                            
+                            <!-- <div class="city">DELHI,IN</div>
+                            <div class="weather-text">HAZE</div>
+                            <div class="weather-details">
+                                <div class="weather-logo"><img src="https://openweathermap.org/img/wn/03n@2x.png" alt=""></div>
+                                <div class="weather-temp">16.05°C</div>
+                                <div class="min-max-container">
+                                    <div class="min">MIN: 16.05°C</div>
+                                    <div class="max">MAX: 16.05°C</div>
+                                </div>
+                            </div> -->
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div class="footer">
+
+            <div class="footer-img">
+                <img src="https://media-exp1.licdn.com/dms/image/C4D03AQFEUZW_J5HRdQ/profile-displayphoto-shrink_800_800/0/1663261452119?e=1675900800&v=beta&t=4IDLesrbew__ElQ3Q8G8Aomf4Wb7Foy9SboHZZu-DwQ"
+                    alt="rohit img">
+            </div>
+
+            <div class="about">
+                <h2>Rohit Choudhary</h2>
+                <p>Front end developer</p>
+                <h5>About Project</h5>
+                <ul>
+                    <li>Weather information around globe </li>
+                    <li>weather api used for real time information</li>
+                    <li>HTML, CSS, Javascript </li>
+                </ul>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
